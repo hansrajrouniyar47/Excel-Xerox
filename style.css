@@ -1,0 +1,41 @@
+body{
+
+  /* margin  not appearing above your container*/
+  margin: 0;
+  font-size: 14;
+
+  /* for not making your page scrollable */
+  overflow: hidden;
+}
+/* here * is for including this particular thing 
+in everything  and box-sizing border box property is for including your border's radius and properties inside that div section */
+*{
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  border: 2px solid red;
+}
+.title-bar{
+  height: 5vh;
+  background-color: #107c41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.menu-bar{
+  height: 5vh;
+}
+.menu-icon-bar{
+  height: 5vh;
+}
+.formula-bar{
+  height: 5vh;
+}
+.data-container{
+  height: 75vh;
+}
+.sheet-bar{
+  height: 5vh;
+}
