@@ -26,6 +26,18 @@ in everything  and box-sizing border box property is for including your border's
 }
 .menu-bar{
   height: 5vh;
+  background-color:#107c41 ;
+  display: flex;
+
+}
+.menu-item{
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 19;
+  display: flex;
+  align-items: center;
+
 }
 .menu-icon-bar{
   height: 5vh;
