@@ -39,8 +39,42 @@ in everything  and box-sizing border box property is for including your border's
   align-items: center;
 
 }
+.menu-item.selected{
+  background-color: white;
+  color: #107c41;
+}
+.menu-item:hover{
+  background-color: #04160c;
+  cursor: pointer;
+}
+.menu-item.selected:hover{
+  background-color: white;
+  cursor: default;
+}
 .menu-icon-bar{
   height: 5vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(235, 228, 228);
+}
+.menu-icon{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+}
+.font-family{
+  font-size: 20px;
+  width: 120px;
+}
+.font-size{
+  font-size: 20px;
+  width: 120px;
+}
+.menu-icon:hover{
+  background-color: lightgrey;
+  cursor: pointer;
 }
 .formula-bar{
   height: 5vh;
