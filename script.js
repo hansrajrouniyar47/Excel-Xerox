@@ -18,13 +18,24 @@ $(document).ready(function(){
         }
       }
 
-      let column=$(`div class="column-name" id="colCod-${ans} colId-${i}">${ans}</div>`);
+      let column = $(`<div class="column-name colId-${i}" id="colCod-${ans}">${ans}</div>`);
       $(".column-name-container").append(column);
-      let row=$(`<div class="row-name" id="rowId-${i}">${i}</div>`);
+      let row = $(`<div class="row-name" id="rowId-${i}">${i}</div>`);
       $(".row-name-container").append(row);
 
+    }  
+    
+    for (let i = 1; i <= 100; i++) {
+      let row = $(`<div class="cell-row"></div>`);
+      for (let j = 1; j <= 100; j++) {
+          let colCode = $(`.colId-${j}`).attr("id").split("-")[1];
+          let column = $(`<div class="input-cell" contenteditable="false" id = "row-${i}-col-${j}" data="code-${colCode}"></div>`);
+          row.append(column);
+      }
+      $(".input-cell-container").append(row);
+  }
+    
 
-    }
 
 });
 
